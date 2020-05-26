@@ -1,0 +1,119 @@
+Framework - interactions of modules
+
+Human creativity is procedural generation tuned by an uncountable number of variables. Humans are alleatoric, that means we follow patterns. We are, at least theoretically, predictable. A human is an easys
+
+Everybody is working separately and there are millions of game workers repeating work and doing it separately. How can we design a framework
+
+User interface is key.
+We need to work out a way that converts one the artists assets into 
+
+Each element of the game should be a standalone module.
+	Every element has private and public members, like C++
+
+Cascading Overrides Universe - physics -	Heirarchical levels that can overrride anything in previous levels. Anything at any step can be broken down and shared.
+Editor, 
+Project, 
+Fundamentally, Global settings can be overruled on a per-asset basis.
+
+
+	
+Interact / fire
+	pick up (e):
+		IsValid
+		Determine what object is
+		
+		Item (parent to)
+			Decorative
+			Clothing
+			Weapon
+		Creature
+			slots
+		Plant
+		
+Interfaces And Interactions
+	Collision
+
+rather than XYZ, use f,r,u
+
+Heirarchy
+	Quarks / Quanta
+	Atoms
+		Molecules
+	
+Only allow parent to child communication + interact apart from global fundamental operations
+What happens to shared assets
+
+Why Unreal is bad: Keep Fixed assets separate from temporary assets  , Unreal Engine 4 seems to me really bad when it comes to organising assets. It used a hybrid folder /type based structure Unreal has a lot of editing windows. It would be good if it could all be done through the same window, with all those features.
+
+Put metadata on everything
+
+
+
+Interactions within a video games - should be able to theoretically interact with every object in the game world in the same way.
+	Talk
+	Collision
+		Bullet 
+			Damage
+	Use (hold, press
+All interactiosns:
+	collect data - parse data - react 9
+	
+	What kind of interaction it is.
+	
+Automatic asset processing.
+	
+Importance of Common Trends in Open World Games
+Lifeforms and how they interact with one another and their environment. 9
+	AI - collect data - parse data - react 9
+		needs 
+		emotions
+		memory
+	Biology 
+		Bones
+		Muscle 
+		Skin
+		Skeleton
+		Nerves
+		Vessels
+	Animations
+		Saved with item
+	ragdolls
+	physics animation#
+Destruction
+	Terrain
+	Building
+Universe (planetary orbit) simulation
+Exanima human movement
+lifecycle
+voice
+collision
+Physics
+The ecology
+Terrain deformation
+AI
+Economies
+Items
+	Let go callback - callback idea is good for bi-drecitional stuff
+	Value
+Fire
+Justice
+Bacteria
+Vehicles
+Weather
+Bullet physics
+construction
+multiplayer
+QTE - these should be like one of these guitar games but without the prompts. 
+
+standardise co-ordinate system  
+
+Assets:
+	Models
+		Lifeform
+		Nature
+		Object
+	Animations
+	Sound
+	Materials
+	Voice
+	
