@@ -240,7 +240,7 @@ air.ai = class { //Class
 		let actionValence = this.getConcept(e.action()).getValence();
 		
 		//Each emotion:
-		lg("I am working here on calculatinfg emotions
+		lg("I am working here on calculating emotions");
 		
 		// Object.keys(air.emotions).forEach(function(emotion){//For every emotion that exists:
 			// let subEmo = subWord && actionField[0] ? subWord.getEmotion(emotion) : undefined;
