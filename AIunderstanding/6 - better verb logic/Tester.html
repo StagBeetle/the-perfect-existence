@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ff0066"><!-- Chrome, Firefox OS and Opera -->
+<meta name="msapplication-navbutton-color" content="#ff0066"><!-- Windows Phone -->		
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><!-- iOS Safari -->
+<title>Human input</title>
+<link rel="shortcut icon" sizes="192x192" type="image/png" href="/icon.png">
+
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	html, body{
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		//display: flex;
+		}
+	.submitLine{
+		display: flex;
+		}
+	#eventBox{
+		flex: 10 10 0;
+		}
+	.fullwidth{
+		width: 100%;
+		}
+	.width90{
+		width: 89%;
+		}
+	.width10{
+		width: 10%;
+		}
+	textarea{
+		width: 100%;
+		height: 33%;
+		}
+	#sliderBox{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.sliderChild{
+		width:25%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	</style>
+</head>
+<body>
+	<textarea name="vocab" id="vocabBox" readonly></textarea> <br>
+	<form name="form" action="#" id="AIform">
+		<div class="submitLine">
+			<input type="text" name="event" id="eventBox" placeholder="e.g. see dog" autocomplete="off">
+			<input type="submit" name="submit" class="width10" value="accept">
+			<input type="button" name="skip" class="width10" value="skip" id="skipButton">
+		</div>
+		<div id="sliderBox"></div>
+	</form>
+</body>
+<script src="AIunderstanding.js"></script>
+<script src="Tester.js"></script>
+<script src="library.js"></script>
+<script src="library-nouns.js"></script>
+<script src="library-verbs.js"></script>
+<script src="library-adjectives.js"></script>
+</html>

@@ -1,0 +1,210 @@
+
+
+
+
+
+A way for a simulated brain to build meaningful links between concepts.
+
+Tried to reduce a binary system 
+Perhaps could run well on an analogue computer or would be cool anyway
+
+Heirarchy allows a new phrase to inherit its parent's tags and will be very important for learning. Make a heirarchy of verbs and objects and emotions.
+
+Heirarchy is just the tags and a noun can be linked to other through the "similar"
+
+Convert emotion into tags.
+A tag is anything, words, emotions and they are linked to one another.
+
+"Try to correctly parse a long and winding sentence." Try this.
+
+If a sentence starts with a verb, it is an order for someone
+
+
+Multithreading for more thoughts.
+
+How does it act?
+Give it goals. For example, maximise happiness. Maximised happiness 
+
+Lydon, the issue is that you don't pick a verb and noun separately. No, but the AI can. 
+
+
+Note to Lydon:
+Instinctual links:
+The are pre-programmed consequential links
+
+The AI can be taught
+
+Time is in terms of lifeterm. Using a float value of 1 being the person's life expectancy
+
+Time independent
+
+
+
+
+
+
+
+
+
+
+
+
+Change processEmotions 
+Chec kemotions work
+
+Collect data > process data > act
+
+AI decides what it could do and then assesses the environment cost.
+
+ pickAction = function(){ //To could run concurrently with no "thread / mind safety" guarantees which is how the ,mind would work, but it would not ensure deterministism
+
+Define emotions in terms of what you would do if you felt that way. Based on emotion what noun has strongest emotions in head.
+Each of these are based on a scale stretched
+	
+view emotion split
+	
+Admiration	: [greet, talk, give, worship]
+Adoration	: [cuddle, kiss, sex]
+Aesthetic	: [appreciation , admire, relax]
+Amusement	: [laugh, smile, tickle]
+Anger	: [shout, punch, kill]
+Anxiety	: [run, hide, cower, look down, beg]
+Awe	: [gawk, kneel, cry]
+Awkwardness	: [cower, smile, run]
+Boredom	: [yawn, walk, doodle, sleep]
+Calmness	: [relax, lookaround]
+Confusion	: [frown, smile, run,]
+Craving	: [twitch, lookaround]
+Disgust	: [recoil, vomit, scream]
+Empathetic pain	: [wince]
+Entrancement	: [stop, stare, cry]
+Excitement	: [tremble, jump, ]
+Fear	: [cower, cry, urinate]
+Horror	: [cower, cry, urinate]
+Interest	: []
+Joy	: []
+Nostalgia	: []
+Relief	; []
+Romance	: []
+Sadness	: []
+Satisfaction	: []
+Sexual desire	: []
+Suprise	: []
+
+envy triumph sympathy hope
+
+	
+"admiration"	
+"adoration"	
+"aestheticappreciation"	
+"amusement"	
+"anger"	
+"anxiety"	
+"awe"	
+"awkwardness"	
+"boredom"	
+"calm"	
+"confusion"	
+"craving"	
+"disgust"	
+"empathicpain"	
+"entrancement"	
+"excitement"	
+"fear"	
+"horror"	
+"interest"	
+"joy"	
+"nostalgia"	
+"relief"	
+"romance"	
+"sadness"	
+"satisfaction"	
+"sexualdesire"	
+"surprise"	
+
+
+
+
+
+
+
+
+
+Subtracting from an emotion is not the same as multiplying to get the inverse.
+Subtracting is when something takes the edge of a good thing, for example. The inverse is when something directly involves that thing and is multiploed
+
+Emotion is based upon its net emotional effect on the arguments rather than a single effect. More control this way
+	forEach argument,
+		does the noun have any tags that affect the meaning of this. e.g. edible for eat, This is a crossover between actions and objects but it is required
+		If not, let emotionCluster[argument] = have an emotion cluster that affects the object;
+		argument.processEmotion(emotionCluster); //This can treat inanimate objects as alive. Maybe that is a good thing.
+		Combine the action cluster with the object cluster to generate half of the emotional impact on the observer AI
+	Then the AI emotion is based on the interaction between emotions (those belonging to the action and the object) 
+	//How do emotions interact?
+	
+	Rather than tags, use adjectives/descriptors, also instead of the animate/inanimate thing
+	
+Ongoing: Design scenarios that demonstrate cause and effect and use all of the verbs
+Remember the context in which nouns are used
+Make the preposition thing better - find their proper name - arguments
+	
+	this memory map doesnt work very well because hearing a friend is different from hearing an enemy. It works but it doesnt take into account context. It could probably infer context from each of the 
+	
+	An analogue system that is by defqault reduce to a binary system
+
+Language is the most descriptive communication method. Not necessarily. Photos exchange 
+
+Adjectives/descriptors(find better name) to replace tags. Descriptors can interact with both actions and 
+
+Codenames
+Can objects be reduced to just a series of	scales:	MysteryObjectX	EnigmaObjectY	UnknownObjectZ
+	Valence(-1 to 1)	0.0	0.9	0.8
+	Tangibility(-1 to 1)	1.0	-1.0	1.0
+	Rarity	0.0	0.8	0.2
+	Usefulness	0.1	0.0	0.2
+	Edibility	0.0	0.0	0.1
+	Romance	0.0	0.9	0.0
+	Joy	0.0	0.8	0.4
+	Sentience	0.0	0.0	0.3
+	Calm	0.1	0.0	0.0
+	Adoration	0.0	0.0	0.4
+	Colour	grey	null	brown
+
+
+
+I've written thos somehwere else but the edible. Tags shold 
+	
+Have every function callable by the bot in whatever order it chooses. Complex shit. Each function has inputs and output that affect which other functions connect to them. I think this would be not produce useful results in the time I am willing to invest.
+Thinking is not a single function but one never-ending, ever-changing process
+
+<Things to perhaps consider>
+	When an event happens, trace the path what is likely to happen
+		Trace a logical path and insert self into that path to check if things work.
+		
+From the network of actions and their paths, Rank each:
+	Their strength/likelihood
+		This Strength รท Sum of all the strengths
+	Their distance from the root event
+		the inverse used as a multipier 1/n
+	The effect of the next verbs
+		These are added to the sum
+	This branching introduces exponential time but each set of calculations is relatively small. Calculations do not have to occur every tick and could be staggered across AIs in the world to limit any CPU impact. Carrying out actions is performed on a different system.
+		Tags can reduce this in very specific situations perhaps they amplify it
+	AIs perhaps have a threshold above which I path is automatically selected.
+	The AI needs to consider its actions within the path somehow
+	
+Each AI could store a snapshot of other AIs in it's knowledge to better make decisions - a naive implementation of saving that date would require squaring the amount of data. Could just store likes?
+
+
+</>
+<Broken events>
+I eat dog - dog needs inedible tag. How would tags be built in naturally? 
+Enemy steal gun from cat
+Enemy shoot dog
+</>
+
+openness	: habitual to adventurous/imaginative
+conscientiousness	: spontaneous to organised/deliberation/thorough
+extraversion	: introverted	to outgoing
+agreeableness	: suspicious/cold to warm/trusting
+neuroticism	: even-keeled to anxious
